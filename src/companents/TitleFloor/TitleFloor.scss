@@ -1,0 +1,19 @@
+@import "../../App.scss";
+
+.titlefloor {
+    &__tit,
+    &__title {
+        font-weight: 400;
+        color: $primary-color-7;
+        font-family: $font-family-1;
+    }
+    &__tit {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    &__title {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: -0.03em;
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../../App.scss";
+
+.cafeinfo {
+    left: 0;
+    width: auto;
+    bottom: 78px;
+    height: 180px;
+    @include flex;
+    align-items: start;
+    position: absolute;
+
+    &__img-box {
+        margin-right: 30px;
+        img {
+            @include img-style;
+        }
+    }
+    &__item {
+        @include flex;
+        margin-bottom: 16px;
+        img {
+            width: 16px;
+            object-fit: cover;
+            margin-right: 11px;
+        }
+    }
+    &__item-desc {
+        width: 96px;
+        @include flex-between;
+        p,
+        span {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            white-space: nowrap;
+            color: $primary-color-7;
+            font-family: $font-family-1;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+}
+.cafeItemDisabled {
+    opacity: 0.4;
+}

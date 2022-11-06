@@ -1,0 +1,33 @@
+@import "../../App.scss";
+
+.floor1F {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: $primary-color-6;
+    padding: 64px 64px 50px 110px;
+
+    &__top {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 64px;
+        @include flex-between;
+    }
+    &__main {
+        width: 100%;
+        height: auto;
+        position: relative;
+        @include flex-between;
+        align-items: start;
+        padding-right: 54px;
+    }
+    &__main-left {
+        width: 660px;
+        margin-right: 158px;
+    }
+    &__main-right {
+        width: 870px;
+        height: 780px;
+    }
+}

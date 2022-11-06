@@ -1,0 +1,58 @@
+@import "../../App.scss";
+
+.floorbtns {
+    top: 192px;
+    right: 58px;
+    width: 65px;
+    height: auto;
+    padding: 6px;
+    position: absolute;
+    border-radius: $bd-radius-4;
+    background: $primary-color-9;
+    &__list {
+        width: 100%;
+        height: auto;
+        @include flex;
+        margin-top: -5px;
+        position: relative;
+        margin-bottom: -5px;
+        flex-direction: column;
+    }
+    &__item-animation {
+        bottom: 0;
+        left: 50%;
+        width: 54px;
+        height: 74px;
+        margin: 5px 0;
+        position: absolute;
+        transition: all 0.4s ease;
+        border-radius: $bd-radius-4;
+        background: $primary-color-4;
+    }
+    &__item {
+        width: 54px;
+        height: 74px;
+        margin: 5px 0;
+        @include flex-center;
+        background: transparent;
+        transition: all 0.3s ease;
+        border-radius: $bd-radius-4;
+    }
+    &__item-btn {
+        outline: none;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 10px;
+        text-align: center;
+        position: relative;
+        letter-spacing: -0.05em;
+        color: $primary-color-10;
+        font-family: $font-family-2;
+        z-index: 2;
+    }
+}
+.floorBntAct {
+    button {
+        color: $white;
+    }
+}

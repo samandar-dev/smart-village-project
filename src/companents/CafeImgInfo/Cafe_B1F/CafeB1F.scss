@@ -1,0 +1,71 @@
+@import "../../../App.scss";
+
+.cafeB1F {
+    width: 868px;
+    height: 780px;
+    position: relative;
+    &__img {
+        @include img-style;
+    }
+    &__btns-box {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    &__img-btn {
+        width: 34px;
+        height: 34px;
+        padding-left: 1px;
+        position: absolute;
+        text-align: center;
+        @include flex-center;
+        border-radius: $bd-radius-5;
+        background: $primary-color-1;
+        img {
+            width: 17px;
+            height: 12px;
+            object-fit: cover;
+        }
+        &:nth-child(1) {
+            top: 16px;
+            left: 120px;
+        }
+        &:nth-child(2) {
+            top: 115px;
+            left: 88px;
+            img {
+                width: 16px;
+                height: 14px;
+                object-fit: cover;
+            }
+        }
+        &:nth-child(3) {
+            top: 125px;
+            left: 293px;
+        }
+        &:nth-child(4) {
+            top: 345px;
+            left: 495px;
+        }
+        &:nth-child(5),
+        &:nth-child(6) {
+            width: 30px;
+            height: 30px;
+            right: 190px;
+            bottom: 230px;
+            border-radius: 3px;
+            background: #1fa14b;
+            img {
+                width: 20px;
+                height: 20px;
+                object-fit: cover;
+            }
+        }
+        &:nth-child(6) {
+            bottom: 290px;
+            right: 105px;
+        }
+    }
+}

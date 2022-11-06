@@ -1,0 +1,306 @@
+@import "../../App.scss";
+
+.cafe {
+    position: relative;
+    width: auto;
+    opacity: 0;
+    animation: animCafe 1s both ease;
+    @keyframes animCafe {
+        100% {
+            opacity: 1;
+        }
+    }
+
+    &__img-info-mod {
+        top: -28px;
+        left: 70px;
+        z-index: 50;
+        width: 560px;
+        height: 178px;
+        position: absolute;
+    }
+    &__img-info-mod-oval-zona {
+        left: 0;
+        bottom: 0;
+        width: 246px;
+        height: 96px;
+        position: absolute;
+        border: 1px solid #7a78ef;
+        border-radius: $bd-radius-5;
+        background: rgba(73, 112, 250, 0.2);
+        :nth-child(1),
+        :nth-child(2) {
+            top: 50%;
+            left: 50%;
+            width: 0%;
+            height: 0%;
+            z-index: 5;
+            position: absolute;
+            border-radius: $bd-radius-5;
+            transform: translate(-50%, -50%);
+            background: rgba(73, 112, 250, 0.2);
+            animation: animZone 2s infinite linear;
+        }
+        :nth-child(2) {
+            animation-delay: 0.6s;
+        }
+    }
+    &__img-info-mod-dashed {
+        left: 110px;
+        bottom: 55px;
+        width: 172px;
+        height: 87px;
+        position: absolute;
+    }
+    &__img-info-mod-metka {
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        border-radius: $bd-radius-5;
+        background: $primary-color-1;
+        transform: translate(-50%, -50%);
+    }
+    &__img-info-mod-dashed-line-1 {
+        top: 0;
+        left: 21px;
+        width: 120px;
+        position: absolute;
+        transform: rotate(-45deg) translate(-50%);
+        border-bottom: 2px dashed $primary-color-1;
+    }
+    &__img-info-mod-dashed-line-2 {
+        top: 0;
+        right: 0;
+        width: 90px;
+        position: absolute;
+        border-bottom: 2px dashed $primary-color-1;
+    }
+    &__img-info-mod-modal {
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 278px;
+        position: absolute;
+        background: $white;
+        padding: 22px 20px 17px;
+        box-shadow: $box-shadow-1;
+        border-radius: $bd-radius-3;
+        border: 1px solid $primary-color-15;
+    }
+    &__img-info-mod-modal-desc {
+        @include flex-between;
+        align-items: start;
+        margin-bottom: 4px;
+    }
+    &__img-info-mod-modal-desc-text {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: $primary-color-1;
+    }
+    &__img-info-mod-modal-desc-tit {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        white-space: nowrap;
+        color: $primary-color-8;
+    }
+    &__img-info-mod-modal-user-number {
+        @include flex;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        color: $primary-color-1;
+        span {
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+    &__img-info-mod-two {
+        left: 95px;
+        width: 560px;
+        bottom: 275px;
+        height: 210px;
+        position: absolute;
+        z-index: 50;
+    }
+    &__img-info-mod-oval-zona-two {
+        right: 0;
+        bottom: 0;
+        width: 302px;
+        height: 118px;
+        position: absolute;
+        border-radius: $bd-radius-5;
+        border: 1px solid $primary-color-3;
+        background: rgba(106, 225, 227, 0.3);
+        :nth-child(1),
+        :nth-child(2) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0%;
+            height: 0%;
+            transition: all 0.3s ease;
+            border-radius: $bd-radius-5;
+            transform: translate(-50%, -50%);
+            background: rgba(94, 175, 176, 0.2);
+            animation: animZone 2s infinite linear;
+            z-index: 5;
+        }
+        :nth-child(2) {
+            animation-delay: 0.6s;
+        }
+    }
+    &__img-info-mod-dashed-two {
+        bottom: 54px;
+        right: 135px;
+        width: 194px;
+        height: 104px;
+        position: absolute;
+    }
+    &__img-info-mod-metka-two {
+        top: 50%;
+        left: 50%;
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        border-radius: $bd-radius-5;
+        background: $primary-color-1;
+        transform: translate(-50%, -50%);
+    }
+    &__img-info-mod-modal-two {
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 236px;
+        position: absolute;
+        background: $white;
+        padding: 22px 20px 17px;
+        box-shadow: $box-shadow-1;
+        border-radius: $bd-radius-3;
+        border: 1px solid $primary-color-15;
+    }
+    &__img-info-mod-dashed-line-1-two {
+        top: 0;
+        left: 0;
+        width: 96px;
+        position: absolute;
+        border-bottom: 2px dashed $primary-color-1;
+    }
+    &__img-info-mod-dashed-line-2-two {
+        bottom: 0;
+        right: -36%;
+        width: 130px;
+        position: absolute;
+        transform: rotate(45deg) translate(-60%);
+        border-bottom: 2px dashed $primary-color-1;
+    }
+}
+
+// ===========================
+
+.cafeInfoModalTop-B1F {
+    top: -28px;
+    left: 70px;
+    .cafe__img-info-mod-oval-zona {
+        width: 248px;
+        height: 98px;
+    }
+    .cafe__img-info-mod-dashed {
+        left: 127px;
+        bottom: 48px;
+    }
+}
+.cafeInfoModalTop-1F {
+    top: -40px;
+    left: 95px;
+    width: 570px;
+    height: 170px;
+    .cafe__img-info-mod-oval-zona {
+        width: 220px;
+        height: 95px;
+    }
+    .cafe__img-info-mod-dashed {
+        left: 115px;
+        bottom: 48px;
+    }
+}
+.cafeInfoModalTop-2F {
+    top: -35px;
+    left: 95px;
+    width: 542px;
+    height: 160px;
+    .cafe__img-info-mod-oval-zona {
+        width: 178px;
+        height: 78px;
+    }
+    .cafe__img-info-mod-dashed {
+        left: 90px;
+        bottom: 38px;
+    }
+}
+
+// =========================
+
+.cafeInfoModalBottom-B1F {
+    left: 95px;
+    bottom: 275px;
+    .cafe__img-info-mod-oval-zona-two {
+        width: 303px;
+        height: 118px;
+    }
+    .cafe__img-info-mod-dashed-two {
+        bottom: 54px;
+        right: 150px;
+    }
+}
+.cafeInfoModalBottom-1F {
+    left: 115px;
+    width: 625px;
+    bottom: 136px;
+    height: 275px;
+    .cafe__img-info-mod-oval-zona-two {
+        width: 400px;
+        height: 230px;
+    }
+    .cafe__img-info-mod-dashed-two {
+        height: 120px;
+        right: 193px;
+        bottom: 105px;
+    }
+    .cafe__img-info-mod-dashed-line-1-two {
+        left: -16px;
+    }
+    .cafe__img-info-mod-dashed-line-2-two {
+        width: 150px;
+        right: -41%;
+    }
+}
+.cafeInfoModalBottom-2F {
+    left: 155px;
+    width: 570px;
+    height: 234px;
+    bottom: 175px;
+    .cafe__img-info-mod-oval-zona-two {
+        width: 285px;
+        height: 164px;
+    }
+    .cafe__img-info-mod-dashed-two {
+        right: 145px;
+        bottom: 78px;
+    }
+}
+@keyframes animZone {
+    80% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
