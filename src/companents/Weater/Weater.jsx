@@ -11,10 +11,6 @@ import "./Weater.scss";
 
 export default function Weater() {
     const arr = ['Tashkent', 'Korea', 'Dubai', 'Russia', 'Argentina']
-    const [day, setDay] = useState();
-    const [time, setTime] = useState();
-    const [month, setMonth] = useState();
-    const [dayName, setDayName] = useState();
     const [iconIndex, setIconIndex] = useState();
     const [weatherToday, setWeathreToday] = useState();
     const [weatherSityName, setWeatherSityName] = useState(arr[0]);
@@ -57,11 +53,11 @@ export default function Weater() {
     }
 
     setInterval(() => {
-        // window.location.reload()
+        window.location.reload()
         // setWeatherSityName(arr[Math.floor(Math.random(+1) * 4)])
-        fetchHandler()
-        console.log('aaa');
-    }, 60000 * 120);
+        // fetchHandler()
+        // console.log('aaa');
+    }, 60000 * 60);
 
     useEffect(() => {
         weatherHandler()
